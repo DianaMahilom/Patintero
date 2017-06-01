@@ -1,0 +1,19 @@
+menuGame={
+	
+	create:function () {
+		titlepage = game.add.image(0,0,"titlepage");
+		menuText = game.add.text(300,350,"Menu",{"fill":"#fff"});
+		playText = game.add.text(300,400,"Play",{"fill":"#fff"});
+		aboutText = game.add.text(300,500,"About",{"fill":"#fff"});
+
+	},
+
+
+	update:function () {
+	 	if(keyboard.up.isDown){
+	 		game.state.start("playGame")
+	 	}
+	},
+
+
+}
